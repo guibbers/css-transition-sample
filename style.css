@@ -1,0 +1,76 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: url(assets/bg.jpg);
+}
+
+.container {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.box-linear,
+.box-ease,
+.box-ease-in,
+.box-ease-out,
+.box-ease-in-out {
+   width: 200px;
+   height: 100px;
+   transition-duration: 2s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+}
+
+.box-linear {
+   background: #FFB997;
+}
+
+.box-linear:hover {
+   width: 600px;
+   transition: 1000ms linear;
+}
+
+.box-ease {
+   background: #F67E7D;
+}
+
+.box-ease:hover {
+   width: 600px;
+   transition: 1000ms ease;
+}
+
+.box-ease-in {
+   background: #843B62;
+}
+
+.box-ease-in:hover {
+   width: 600px;
+   transition: 1000ms ease-in;
+}
+
+.box-ease-out {
+   background: #FFFD77;
+}
+
+.box-ease-out:hover {
+   width: 600px;
+   transition: 1000ms ease-out;
+}
+
+.box-ease-in-out {
+   background: #809BCE;
+}
+
+.box-ease-in-out:hover {
+   width: 600px;
+   transition: 1000ms ease-in-out;
+}
